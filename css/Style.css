@@ -1,0 +1,370 @@
+html {
+    font-family: 'Roboto' sans-serif;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* header шапка страницы */
+header.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Roboto';
+    max-width: 1300px;
+    margin: 0 auto;
+    min-height: 80px;
+    background-color: #213B7E;
+    color: #FFFFFF;
+    box-sizing: border-box;
+
+}
+
+.logo {
+    margin: 16px 17px;
+}
+
+.site-menu {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.menu-link:hover {
+    background-color: #FFFFFF;
+    color: #213B7E;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+
+.button-enter {
+    background-color: #EA5D21;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 15px 16px;
+    padding: 16px 50px;
+    cursor: pointer;
+}
+
+/* Popup форма для входа */
+.login-popup {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    min-height: 418px;
+    padding: 26px 28px 50px;
+    background: #FFFFFF;
+    border: 1px solid #213B7E;
+    background-color: #FFFFFF
+}
+
+.closePopUp {
+    position: absolute;
+    right: 20px;
+    width: 32px;
+    padding: 5px 10px;
+    color: #000;
+    cursor: pointer;
+}
+
+.login-h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form>input {
+    width: 100%;
+    max-width: 500px;
+    min-height: 35px;
+    margin-bottom: 56px;
+    border: 1px solid #808080;
+}
+
+.login-enter {
+    width: 444px;
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+    font-size: 24px;
+    line-height: 28px;
+    color: #808080;
+    padding: 10px;
+}
+
+.popup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 152px;
+    min-height: 50px;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #EA6113;
+    border: none;
+    cursor: pointer;
+}
+
+.show-popup {
+    display: block;
+}
+
+.close-popup {
+    display: none;
+}
+
+.parol {
+    color: #000;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* main основная часть страницы */
+.main {
+    margin: 0 auto;
+    padding: 0 15px;
+    flex-grow: 1;
+}
+
+.picture {
+    width: 100%;
+    max-width: 523px;
+}
+
+.main-h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.main-h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.wrap {
+    max-width: 634px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.Plashka {
+    float: right;
+    margin: -41px 23px;
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #646464;
+
+}
+
+/* Students */
+.main-student {
+    font-family: 'Roboto';
+}
+.studentname {
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-align: center;
+
+}
+.kursstudents {
+    position: relative;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    cursor: pointer; 
+}
+.studentscard {
+    padding-left: 25px;
+}
+.border-foto:hover {
+    border: #86C6F4 solid 5px;
+}
+
+.new-student {
+    position:absolute;
+    width: 94px;
+    height: 24px;
+    left: 374px;
+    top: -8px; 
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #3AA828;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* about */
+.text {
+    font-family: 'Roboto';
+    font-size: 25px;
+    
+}
+.video {
+    width: 100%;
+}
+
+/* Contacts */
+.address-student {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+.text-contacts {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+.phone-text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: underline;
+    
+}
+
+.map-photo {
+    width: 100%;
+    max-width: 1270px;
+}
+/* footer нижняя часть страницы */
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 60px;
+    background-color: #213B7E;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.waterznak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 19px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.footer-link {
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+em {
+    color: #CF5510;
+}
+
+/* Медиазапросы(Адаптив под разные устройства) */
+@media (max-width:1300px) {
+    .main {
+        width: auto;
+    }
+}
+
+@media (max-width:750px) {
+    .menu-link {
+        font-size: 15px;
+    }
+
+    .button-enter {
+        padding: 12px 25px;
+    }
+
+    .wrap {
+        width: auto;
+    }
+}
+
+@media (max-width:608px) {
+    .menu-link {
+        justify-content: space-around;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:562px) {
+    .button-enter {
+        padding: 10px 20px;
+    }
+
+    .menu-link {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:520px) {
+    .menu-link {
+        margin: 10px 0;
+
+    }
+
+    .logo {
+        width: auto;
+        height: auto;
+    }
+
+    .button-enter {
+        padding: 5px 10px;
+    }
+
+    header.wrapper {
+        flex-direction: column;
+    }
+
+    .site-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
